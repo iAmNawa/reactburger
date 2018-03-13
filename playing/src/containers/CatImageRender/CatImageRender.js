@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class CatImageRender extends Component {
   state = {
-    pickles: 2
+    pickles: 0
   }
 
   addMore  = () => {
