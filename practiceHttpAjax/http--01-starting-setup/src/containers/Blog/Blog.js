@@ -10,7 +10,8 @@ class Blog extends Component {
    state = {
      posts: [],
      selectedPostId: null,
-     error: false
+     error: false,
+     tester: 1
    }
    componentDidMount() {
     axios.get('https://jsonplaceholder.typicode.com/posts')
