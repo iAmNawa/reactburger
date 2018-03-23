@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, NavLink, Switch, Redirect } from 'react-router-dom';
 import Users from '../Users/Users';
 import Courses from '../Courses/Courses';
+import DifferentOne from '../DifferentPaths/DifferentOne';
 
 
 class Header extends Component {
