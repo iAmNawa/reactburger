@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Route, NavLink, Switch, Redirect } from 'react-router-dom';
+import Users from '../Users/Users';
+import Courses from '../Courses/Courses';
 
 
 class Header extends Component {
@@ -17,14 +19,18 @@ class Header extends Component {
                        color: '#fa923f',
                        textDecoration: 'underline'
                      }}>Users</NavLink></li>
-                   <li><NavLink to={{
-                       pathname: '/courses/',
+                   <li><NavLink
+                     to='/courses/'
+                     activeClassName="my-active"
+                     activeStyle={{
+                       color: '#fa923f',
+                       textDecoration: 'underline'
                      }}>Courses</NavLink></li>
                   </ul>
                  </nav>
               </header>
-              <Route path="/courses" />
-              <Route path="/users" />
+              <Route path="/users" component={Users} />
+              <Route path="/courses" component={Courses} />
             </div>
         );
     }
