@@ -22,7 +22,7 @@ class Persons extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log('[Update Persons.js] inside shouldComponentUpdate', nextProps, nextState);
-    return nextProps.persons !== this.props.persons;
+    return true;
   }
 
   componentWillUpdate(nextProps, nextState) {
