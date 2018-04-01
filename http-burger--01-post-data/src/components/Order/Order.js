@@ -4,9 +4,8 @@ import classes from './Order.css';
 
 const order = (props) => (
   <div className={classes.Order}>
-    <p>Ingredients: WTF</p>
-    <p>Price: <strong>{props.price}</strong></p>
-    <div>{console.log(props.price)}</div>
+    <p>Ingredients:</p>
+    <p>Price: <strong>USD {Number.parseFloat(props.price).toFixed(2)}</strong></p>
   </div>
 );
 
