@@ -4,8 +4,9 @@ import classes from './Order.css';
 
 const order = (props) => (
   <div className={classes.Order}>
-    <p>Ingredients: Salad (1)</p>
-    <p>Price: <strong>USD 5.45</strong></p>
+    <p>Ingredients: WTF</p>
+    <p>Price: <strong>{props.price}</strong></p>
+    <div>{console.log(props.price)}</div>
   </div>
 );
 
