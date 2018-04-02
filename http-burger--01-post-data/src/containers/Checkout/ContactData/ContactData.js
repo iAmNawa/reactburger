@@ -79,6 +79,10 @@ class ContactData extends Component {
             } );
     }
 
+    inputChangedHandler = (event) => {
+      console.log(event.target.value)
+    }
+
   render () {
     const formElementsArray = [];
     for (let key in this.state.orderForm) {
@@ -94,7 +98,8 @@ class ContactData extends Component {
            key={formElement.id}
            elementType={formElement.config.elementType}
            elementConfig={formElement.config.elementConfig}
-           value={formElement.config.value} />
+           value={formElement.config.value}
+           changed={this.inputChangedHandler} />
        ))}
        <Button btnType="Success" clicked={this.orderHandler}>{console.log(this.props.totalPrice)}ORDER</Button>
       </form>
