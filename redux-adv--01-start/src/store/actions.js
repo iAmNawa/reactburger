@@ -27,3 +27,15 @@ export const subtract = (value) => {
     val: value
   }
 };
+export const storeResult = (res) => {
+  return {
+    type: STORE_RESULT,
+    result: res
+  }
+};
+export const deleteResult = (res) => {
+  return {
+    type: DELETE_RESULT,
+    resultElId: res
+  }
+};
